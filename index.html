@@ -16,14 +16,8 @@
                 <div class="col-6 mt-3 text-center">
                     <h1 class="bg-primary text-white p-2">TO DO LIST</h1>
                     <ul class="list-group">
-                        <li class="list-group-item">
-                            Cosa da fare a caso
-                        </li>
-                        <li class="list-group-item">
-                            Cosa da fare a caso
-                        </li>
-                        <li class="list-group-item">
-                            Cosa da fare a caso
+                        <li class="list-group-item" v-for="toDo in toDos">
+                            {{ toDo }}
                         </li>
                     </ul>
                 </div>
