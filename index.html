@@ -22,6 +22,10 @@
                             <div><i @click="removeElement(index)" class="bi bi-bookmark-x-fill"></i></div>
                         </li>
                     </ul>
+                    <input class="mt-3 text-center" type="text" v-model.trim="newToDo">
+                    <div class="mt-2">
+                        <button class="btn btn-primary" @click="addToList(newToDo)">Aggiungi alla lista</button>
+                    </div>
                 </div>
             </div>
         </div>

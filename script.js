@@ -23,11 +23,26 @@ const app = new Vue({
                 done: true,
             },
         ],
+
+        newToDo: "",
     },
 
     methods: {
         removeElement: function(index){
             this.toDos.splice(index, 1);
         },
+
+        addToList: function(currentToDo){
+            if(currentToDo == ""){
+                console.warn('Un elemento vuoto non è valido!');
+            } else {
+                this.toDos.push(
+                    {
+                        text: currentToDo,
+                        done: false,
+                    });
+                this.newToDo = '';
+            }
+        }
     }
 })
