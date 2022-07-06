@@ -16,7 +16,7 @@
                 <div class="col-6 mt-3 text-center">
                     <h1 class="bg-primary text-white p-2">TO DO LIST</h1>
                     <ul class="list-group">
-                        <li class="list-group-item" v-for="toDo in toDos">
+                        <li class="list-group-item" :class="{'text-decoration-line-through' : toDo.done}" v-for="toDo in toDos">
                             {{ toDo.text }}
                         </li>
                     </ul>

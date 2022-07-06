@@ -24,12 +24,4 @@ const app = new Vue({
             },
         ],
     },
-
-    methods: {
-        elementDone: function(text, done){
-            if(this.done != false){
-                this.text.classList.add("text-decoration-line-through");
-            }
-        }
-    }
 })
