@@ -24,4 +24,10 @@ const app = new Vue({
             },
         ],
     },
+
+    methods: {
+        removeElement: function(index){
+            this.toDos.splice(index, 1);
+        },
+    }
 })
