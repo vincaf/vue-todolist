@@ -17,7 +17,7 @@
                 <div class="col-6 mt-3 text-center">
                     <h1 class="bg-primary text-white p-2">TO DO LIST</h1>
                     <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through' : toDo.done}" v-for="(toDo, index) in toDos">
+                        <li class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through' : toDo.done}" v-for="(toDo, index) in toDos" @click="toDo.done = !toDo.done">
                             <div>{{ toDo.text }}</div>
                             <div><i @click="removeElement(index)" class="bi bi-bookmark-x-fill"></i></div>
                         </li>
